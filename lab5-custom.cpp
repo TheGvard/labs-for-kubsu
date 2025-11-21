@@ -12,21 +12,21 @@ int main() {
 	std::cout << "Кол-во столбцов: "; std::cin >> m;
 	std::cout << "Заполните матрицу (граница строки обозначена -----)";
 	std::vector<std::vector<double>> matrix(n, std::vector<double>(m, 0));
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
+	for (int j = 0; j < m; j++) {
+		for (int i = 0; i < n; i++) {
 			std::cin >> matrix[i][j];
 		}
 		std::cout << "-----";
 	}
 	std::vector<double> result(m, 0);
 	std::cout << "\n";
-	for (int i = 0; i < m; i++) {;
-		for (int j = 0; j < n; j++) {
+	for (int j = 0; j < n; j++) {;
+		for (int i = 0; i < m; i++) {
 			if (matrix[i][j] == 0) {
-				result[i] = 1;
+				result[j] = 1;
 			}
 		}
-		std::cout << result[i] << " ";
+		std::cout << result[j] << " ";
 	}
 	return 0;
 }
