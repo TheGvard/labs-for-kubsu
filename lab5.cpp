@@ -10,9 +10,9 @@ int main() {
 	std::cout << "Кол-во столбцов: "; std::cin >> m;
 	std::cout << "Заполните матрицу (граница строки обозначена -----)";
 	double **matrix = new double* [n];
-	for (int i = 0; i < n; i++) {
-		matrix[i] = new double[m];
-		for (int j = 0; j < m; j++) {
+	for (int j = 0; j < m; j++) {
+		matrix[j] = new double[m];
+		for (int i = 0; i < n; i++) {
 			std::cin >> matrix[i][j];
 		}
 		std::cout << "-----";
