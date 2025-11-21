@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include<cmath>
 #include <locale>
 
@@ -20,14 +19,14 @@ int main() {
 	}
 
 	double* result = new double[m];
-	for int j = 0; j < n; j++) {
-		result[i] = 0;
-		for (int i = 0; i < m; i++)({
+	for (int j = 0; j < n; j++) {
+		result[j] = 0;
+		for (int i = 0; i < m; i++) {
 			if (matrix[i][j] == 0) {
-				result[i] = 1;
+				result[j] = 1;
 			}
 		}
-		std::cout << result[i] << " ";
+		std::cout << result[j] << " ";
 	}
 	std::cout << "\n";
 	for (int i = 0; i < n; i++) {
