@@ -6,8 +6,8 @@ int main() {
 	int n, m;
 	setlocale(LC_ALL, "rus");
 	std::cout << "Проверка элементов столбца на нулевое значение\n";
-	std::cout << "Кол-во столбцов: "; std::cin >> m;
-	std::cout << "Кол-во строк: "; std::cin >> n;
+	std::cout << "Кол-во столбцов (кол-во символов в строке): "; std::cin >> m;
+	std::cout << "Кол-во строк (кол-во символов в столбце): "; std::cin >> n;
 	std::cout << "Заполните матрицу (граница строки обозначена -----)\n";
 	double** matrix = new double* [n];
 	for (int i = 0; i < n; i++) {
